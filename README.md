@@ -13,9 +13,28 @@ Comprehensive static analysis tool for iOS .ipa applications that generates deta
 
 ## Installation
 
+### Standard Installation
+
 ```bash
 npm install
 ```
+
+### Remote/Headless Environment Setup
+
+For remote environments without GUI support (like Claude Code sessions):
+
+```bash
+# Install dependencies without downloading Chromium
+PUPPETEER_SKIP_DOWNLOAD=true npm install
+
+# Then to enable PDF generation, install Chromium:
+npm run install:chromium
+
+# Or manually set the environment variable:
+PUPPETEER_SKIP_DOWNLOAD=false npm install
+```
+
+**Note**: HTML reports work out-of-the-box in any environment. PDF generation requires Chromium/Chrome, which needs to be downloaded separately in remote environments.
 
 ## Usage
 
