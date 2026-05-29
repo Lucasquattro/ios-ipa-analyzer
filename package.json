@@ -1,0 +1,28 @@
+{
+  "name": "ios-ipa-analyzer",
+  "version": "1.0.0",
+  "description": "Comprehensive feature audit tool for iOS .ipa applications",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ios",
+    "ipa",
+    "audit",
+    "analysis",
+    "features"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "unzipper": "^0.10.14",
+    "plist": "^3.1.0",
+    "puppeteer": "^21.6.1",
+    "commander": "^11.1.0",
+    "handlebars": "^4.7.8",
+    "fs-extra": "^11.2.0"
+  }
+}
